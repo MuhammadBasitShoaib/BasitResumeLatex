@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Muhammad Basit} \\ \vspace{1pt}
+    \small (+1) 437-604-9100 $|$ \href{mailto:basitshoaib2003@gmail.com}{\underline{basitshoaib2003@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/mbasit2024}{\underline{in/mbasit2024}} $|$
+    \href{https://github.com/MuhammadBasitShoaib}{\underline{github/MuhammadBasitShoaib}} $|$
+    Toronto, ON
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Software Engineer}{December 2024 -- Present}
+      {US Government Public Departments}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{While working at NeoGov, developed and supported HR platform features across multiple repositories using \textbf{.NET 10}, \textbf{Angular 20}, and \textbf{Claude AI}, delivering workforce management solutions for U.S. government agencies}
+        \resumeItem{Recognized with \textbf{Best Integration of the Year} and \textbf{Developer of the Year} awards for leading requirements gathering and implementation of Ellucian Colleague ERP integration with \textbf{.NET 10}, onboarding \textbf{30 colleges in under 4 months} with bidirectional sync and \textbf{20} institutions in queue}
+        \resumeItem{Integrated Checkr background screening via \textbf{OAuth 2.0} as NeoGov's \textbf{first vendor integration on the OAuth model}, designing a \textbf{self-service frontend} in \textbf{Angular 20} for client credential setup with \textbf{no manual intervention} from the implementation team, onboarding \textbf{10 clients}}
+        \resumeItem{Designed and deployed a scheduled \textbf{.NET 10} background service ingesting usage telemetry from \textbf{20} NeoGov products (\textbf{1M+} records/month) with \textbf{99.99\%} reliability, delivering feature adoption insights to product leadership}
+        \resumeItem{Modernized the data export service through a \textbf{.NET 10} migration and parallel processing, cutting end-to-end export runtime from \textbf{25 minutes} to \textbf{5 minutes}, an \textbf{80\%} performance improvement}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Senior Full Stack Development Engineer}{May 2021 -- January 2024}
+      {Simmeth Systems GMBH}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Contracted through Strategic Systems International to Simmeth Systems GMBH, mentoring and supporting a team of \textbf{3 developers} for \textbf{2 years} with code reviews and technical guidance}
+        \resumeItem{Delivered full-stack solutions across \textbf{.NET Core} Web API (authentication/authorization), \textbf{MS SQL Server} stored procedures and data modeling, and \textbf{Angular 2+} with HTML5, CSS, and JavaScript}
+        \resumeItem{Led \textbf{Agile Scrum} rewrite of a large-scale distributed web application in \textbf{.NET 6} and \textbf{Angular} using a hybrid \textbf{monolith and microservices} architecture with \textbf{OpenID Connect}, \textbf{Entity Framework Core}, LINQ, Dapper, and \textbf{Azure DevOps CI/CD}}
+        \resumeItem{Strengthened \textbf{application security} by implementing \textbf{OpenIDDict Core}, Azure, \textbf{Okta}, and \textbf{Keycloak}; achieved \textbf{TÜV} third-party penetration testing certification, contributing to a \textbf{17\%} increase in sales}
+        \resumeItem{Reduced \textbf{application load time} by \textbf{70\%} through \textbf{proactive performance optimizations}}
+        \resumeItem{Managed \textbf{cross-functional delivery} within \textbf{budget and timeline} constraints while \textbf{collaborating with clients} to gather requirements and ship new system capabilities}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+      {Southwestern University}{Georgetown, TX}
+      \resumeItemListStart
+        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+        \resumeItem{Developed a game in Java to test the generated dungeons}
+        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Southwestern University}{Georgetown, TX}
+      {Bachelor of Arts in Computer Science, Minor in Business}{Aug. 2018 -- May 2021}
+    \resumeSubheading
+      {Blinn College}{Bryan, TX}
+      {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+            \resumeItem{Visualized GitHub data to show collaboration}
+            \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
