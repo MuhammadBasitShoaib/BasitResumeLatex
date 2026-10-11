@@ -20,21 +20,8 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -57,7 +44,7 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that generated PDF is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -76,24 +63,6 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
@@ -102,45 +71,38 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
+% TODO: consider a professional email such as firstname.lastname@... (current one contains "2003")
 \begin{center}
     \textbf{\Huge \scshape Muhammad Basit} \\ \vspace{1pt}
-    \small (+1) 437-604-9100 $|$ \href{mailto:basitshoaib2003@gmail.com}{\underline{basitshoaib2003@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/mbasit2024}{\underline{in/mbasit2024}} $|$
-    \href{https://github.com/MuhammadBasitShoaib}{\underline{github/MuhammadBasitShoaib}} $|$
-    Toronto, ON
+    \small Toronto, ON $|$ (+1) 437-604-9100 $|$ \href{mailto:basitshoaib2003@gmail.com}{\underline{basitshoaib2003@gmail.com}} $|$
+    \href{https://linkedin.com/in/mbasit2024}{\underline{linkedin.com/in/mbasit2024}} $|$
+    \href{https://github.com/MuhammadBasitShoaib}{\underline{github.com/MuhammadBasitShoaib}} \\
+    Legally authorized to work in Canada (no sponsorship required)
 \end{center}
 
- %-----------Work Authorization-----------
- \section{Work Authorization}
- \resumeSubHeadingListStart
- {Legally authorized to work in Canada \textbf{(No sponsorship required)}}
- \resumeSubHeadingListEnd
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    Senior Full Stack .NET and Azure engineer with 11+ years of experience building enterprise-scale applications in healthcare and government. Skilled in .NET 10, ASP.NET Core, Azure (Functions, API Management, Key Vault, Azure DevOps), microservices, OAuth 2.0 and OpenID Connect security, and Angular and React front ends. Led a team of 3 engineers, mentored developers, and won NEOGOV's \textbf{Developer of the Year} and \textbf{Best Integration of the Year} awards. Microsoft Certified: Azure Developer Associate.
+  }}
+\end{itemize}
 
- \section{Professional Summary}
- \resumeSubHeadingListStart
- {Senior Full Stack .NET \& Azure Engineer | 11+ Years Building Enterprise-Scale Solutions | Delivered 80\% performance improvements, 57\% cost reductions, and secured \textbf{Developer of the Year} award. Expertise: .NET 10, Azure cloud architecture, microservices, OAuth/OpenID security, Angular \& React. Led cross-functional teams and mentored engineers. Microsoft Azure Certified.}
- \resumeSubHeadingListEnd
-
- %-----------PROGRAMMING SKILLS-----------
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
    \small{\item{
-    \textbf{Languages}{: C\#, SQL, JavaScript, TypeScript, HTML5, CSS3} \\
-    \textbf{Frameworks}{: .NET 6/8/10, ASP.NET Core, Web API, Angular, React, Entity Framework Core, Dapper, LINQ} \\
-    \textbf{Cloud}{: Azure Functions, API Management, Key Vault, App Services, Azure DevOps, Azure SQL}\\
-    \textbf{Authentication}{: OAuth 2.0, JWT, OpenID Connect, Azure AD, Okta, Keycloak, OpenIddict} \\ 
+    \textbf{Languages}{: C\#, SQL, TypeScript, JavaScript, HTML5, CSS3} \\
+    \textbf{Backend}{: .NET 6/8/10, ASP.NET Core, Web API, Entity Framework Core, Dapper, LINQ} \\
+    \textbf{Frontend}{: Angular, React} \\
+    \textbf{Azure and DevOps}{: Azure Functions, API Management, Key Vault, App Services, Azure SQL, Azure DevOps, CI/CD} \\
+    \textbf{Authentication}{: OAuth 2.0, JWT, OpenID Connect, Azure AD, Okta, Keycloak, OpenIddict} \\
     \textbf{Databases}{: SQL Server, Azure SQL, MySQL} \\
-    \textbf{Architecture}{: Microservices, REST APIs, Distributed Systems, CI/CD} \\
-    \textbf{AI}{: Claude AI, GitHub Copilot, OpenAI APIs}
+    \textbf{Architecture}{: Microservices, REST APIs, Distributed Systems} \\
+    \textbf{AI-Assisted Development}{: Claude AI, GitHub Copilot, OpenAI APIs}
    }}
 \end{itemize}
 
@@ -148,75 +110,69 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
+    % TODO: add "(Contract)" to the title if applicable
     \resumeSubheading
       {Senior Software Engineer}{December 2024 -- Present}
-      {US Government Public Departments}{Toronto, ON}
+      {NEOGOV, HR platform for U.S. government public departments}{}
       \resumeItemListStart
-        \resumeItem{While working at NeoGov, developed and supported HR platform features across multiple repositories using \textbf{.NET 10}, \textbf{Angular 20}, and \textbf{Claude AI}, delivering workforce management solutions for U.S. government agencies}
-        \resumeItem{Recognized with \textbf{Best Integration of the Year} and \textbf{Developer of the Year} awards for leading requirements gathering and implementation of Ellucian Colleague ERP integration with \textbf{.NET 10}, onboarding \textbf{30 colleges in under 4 months} with bidirectional sync and \textbf{20} institutions in queue}
-        \resumeItem{Integrated Checkr background screening via \textbf{OAuth 2.0} as NeoGov's \textbf{first vendor integration on the OAuth model}, designing a \textbf{self-service frontend} in \textbf{Angular 20} for client credential setup with \textbf{no manual intervention} from the implementation team, onboarding \textbf{10 clients}}
-        \resumeItem{Designed and deployed a scheduled \textbf{.NET 10} background service ingesting usage telemetry from \textbf{20} NeoGov products (\textbf{1M+} records/month) with \textbf{99.99\%} reliability, delivering feature adoption insights to product leadership}
-        \resumeItem{Modernized the data export service through a \textbf{.NET 10} migration and parallel processing, cutting end-to-end export runtime from \textbf{25 minutes} to \textbf{5 minutes}, an \textbf{80\%} performance improvement}
+        % TODO: add scale (number of repositories, users or team size)
+        \resumeItem{Develop and support features on NEOGOV's HR platform across multiple repositories using \textbf{.NET 10} and \textbf{Angular 20}, with Claude AI as part of the development workflow, delivering workforce management solutions for U.S. government agencies}
+        \resumeItem{Led requirements gathering and implementation of the \textbf{Ellucian Colleague ERP integration} with .NET 10, including bidirectional data sync. Onboarded \textbf{30 colleges in under 4 months}, with 20 more institutions in the queue, and earned both the \textbf{Best Integration of the Year} and \textbf{Developer of the Year} awards for the work}
+        \resumeItem{Integrated \textbf{Checkr} background screening using \textbf{OAuth 2.0}, making it NEOGOV's first vendor integration built on the OAuth model. Designed a self-service frontend in Angular 20 where clients set up their own credentials, so the implementation team no longer had to step in manually, and onboarded \textbf{10 clients}}
+        \resumeItem{Designed and deployed a scheduled \textbf{.NET 10} background service that ingests usage telemetry from \textbf{20 NEOGOV products (1M+ records per month)} with \textbf{99.99\%} reliability, giving product leadership clear insight into feature adoption}
+        \resumeItem{Modernized the data export service by migrating it to .NET 10 and adding parallel processing, cutting end-to-end export runtime from 25 minutes to 5 minutes, an \textbf{80\%} performance improvement}
       \resumeItemListEnd
 
+    % TODO: add "(Contract)" to the title if applicable
     \resumeSubheading
       {Full Stack Development Engineer}{April 2024 -- October 2024}
-      {Health Futures}{Toronto, ON}
+      {Health Futures}{}
       \resumeItemListStart
-        \resumeItem{Strengthened \textbf{Azure Function App} security across \textbf{20+ critical microservices} by implementing \textbf{JWT authentication} and \textbf{OAuth 2.0} through \textbf{Azure API Management}, achieving \textbf{SOC 2 compliance}}
-        \resumeItem{Architected and deployed full-stack solutions across \textbf{Azure Functions}, \textbf{Azure Key Vault}, and \textbf{Azure API Management} handling \textbf{10M+ monthly API calls}, \textbf{MS SQL Server} stored procedures and data modeling, and \textbf{ReactJS} with HTML5, CSS, and JavaScript}
-        \resumeItem{Modernized legacy API stack by implementing \textbf{JIL serialization}, \textbf{response compression}, and \textbf{intelligent caching strategies}, \textbf{reducing API response times by 45\%}} and improving user experience for \textbf{150K+ active users}}}
-        \resumeItem{Collaborated with product and client success teams to gather requirements, translate into \textbf{user stories}}, and deliver 8 new features within aggressive timeline}
+        \resumeItem{Strengthened security across \textbf{20+ critical Azure Functions} by implementing \textbf{JWT authentication} through \textbf{Azure API Management}, which supported the company's SOC 2 compliance}
+        \resumeItem{Architected and deployed full-stack solutions on \textbf{Azure Functions}, \textbf{Azure Key Vault}, and \textbf{Azure API Management}, handling \textbf{10M+ API calls per month}. Worked across the stack, from MS SQL Server stored procedures and data modeling on the back end to ReactJS with HTML5, CSS, and JavaScript on the front end}
+        \resumeItem{Modernized the legacy API stack by introducing JIL serialization, response compression, and caching strategies, reducing API response times by \textbf{45\%} and improving the experience for \textbf{150K+ active users}}
+        \resumeItem{Worked with product and client success teams to gather requirements, translate them into user stories, and deliver 8 new features on a tight timeline}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
     \resumeSubheading
       {Senior Full Stack Development Engineer}{May 2021 -- January 2024}
-      {Simmeth Systems GMBH}{Toronto, ON}
+      {Simmeth Systems GmbH}{}
       \resumeItemListStart
-        \resumeItem{\textbf{Led and mentored a team of 3 engineers} for \textbf{2.5 years}, conducting code reviews, technical onboarding, and architectural guidance, resulting in \textbf{40\% reduction} in production bugs and \textbf{100\%} on-time delivery for 8 consecutive quarters}
-        \resumeItem{Architected and delivered full-stack solutions across \textbf{.NET Core Web API} (authentication/authorization), \textbf{MS SQL Server} stored procedures and data modeling, and \textbf{Angular 2+} with HTML5, CSS, and JavaScript to \textbf{500K+ monthly active users}}}
-        \resumeItem{Spearheaded \textbf{Agile Scrum} rewrite of large-scale distributed web application from legacy .NET Framework to \textbf{.NET 6} and \textbf{Angular} using hybrid \textbf{monolith and microservices} architecture with \textbf{OpenID Connect}, \textbf{Entity Framework Core}, LINQ, Dapper, and \textbf{Azure DevOps CI/CD}, \textbf{completing 6 months ahead of schedule}}}
-        \resumeItem{Fortified \textbf{application security} by architecting and deploying \textbf{OpenIDDict Core}, Azure AD, \textbf{Okta}, and \textbf{Keycloak} integrations; achieved \textbf{TÜV} third-party penetration testing certification, contributing to \textbf{17\%} increase in enterprise sales}
-        \resumeItem{Reduced \textbf{application load time} by \textbf{70\%}} through proactive caching strategies, database query optimization, and lazy-loading architecture improvements, improving user retention by \textbf{12\%}}}
-        \resumeItem{Managed \textbf{cross-functional delivery}} with product, design, and client teams within strict budget and timeline constraints while gathering requirements and shipping 15+ new system capabilities}
-    \resumeItemListEnd
+        \resumeItem{Led and mentored a team of \textbf{3 engineers} for 2.5 years through code reviews, technical onboarding, and architectural guidance, resulting in a \textbf{40\% reduction} in production bugs and \textbf{100\%} on-time delivery for 8 consecutive quarters}
+        \resumeItem{Architected and delivered full-stack solutions for \textbf{500K+ monthly active users}, using \textbf{.NET Core Web API} (including authentication and authorization), MS SQL Server stored procedures and data modeling, and Angular 2+ with HTML5, CSS, and JavaScript}
+        \resumeItem{Spearheaded an Agile Scrum rewrite of a large-scale distributed web application, moving it from legacy .NET Framework to \textbf{.NET 6} and \textbf{Angular}. Used a hybrid monolith and microservices architecture with OpenID Connect, Entity Framework Core, LINQ, Dapper, and Azure DevOps CI/CD, and completed the project \textbf{6 months ahead of schedule}}
+        \resumeItem{Strengthened application security by architecting and deploying integrations with \textbf{OpenIddict}, Azure AD, \textbf{Okta}, and \textbf{Keycloak}, and achieved TÜV third-party penetration testing certification, contributing to a \textbf{17\%} increase in enterprise sales}
+        \resumeItem{Reduced application load time by \textbf{70\%} through proactive caching, database query optimization, and lazy-loading improvements, which helped raise user retention by \textbf{12\%}}
+        \resumeItem{Managed cross-functional delivery with product, design, and client teams within strict budget and timeline constraints, gathering requirements and shipping 15+ new system capabilities}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Senior Software Engineer}{August 2017 -- May 2021}
-      {CureMD Research and Development Center}{Toronto, ON}
+      {CureMD Research and Development Center}{}
       \resumeItemListStart
-        \resumeItem{Architected and delivered full-stack \textbf{Electronic Health Record (EHR)} platform features using \textbf{ASP.NET Web Forms} (\textbf{70\%}) and \textbf{JavaScript/jQuery/HTML/CSS} (\textbf{30\%}), serving \textbf{5,000+ healthcare providers} and \textbf{50M+ patient records}}
-        \resumeItem{Led \textbf{FlexScanMD inventory management} integration into existing EHR ecosystem, \textbf{eliminating the need} for practices to manage multiple software platforms and \textbf{reducing operational overhead by 25\%}}}
-        \resumeItem{Pioneered \textbf{Real-time Prescription Benefit Check} system using third-party APIs, \textbf{reducing patient medication costs by 57\%}} and improving patient satisfaction scores by \textbf{35\%}}}
-        \resumeItem{Implemented SMS notification system for prescription status updates, \textbf{reducing prescription abandonment by 63\%}} and increasing prescription fill-through rate from \textbf{78\% to 92\%}}}
+        \resumeItem{Architected and delivered full-stack \textbf{Electronic Health Record (EHR)} platform features, using ASP.NET Web Forms on the back end and JavaScript, jQuery, HTML, and CSS on the front end, serving \textbf{5,000+ healthcare providers} and \textbf{50M+ patient records}}
+        \resumeItem{Led the integration of \textbf{FlexScanMD inventory management} into the existing EHR ecosystem, so practices no longer had to manage multiple software platforms, reducing operational overhead by \textbf{25\%}}
+        % TODO: be ready to explain the cohort and how the 57\% was measured
+        \resumeItem{Pioneered a \textbf{Real-time Prescription Benefit Check} system using third-party APIs, reducing patient medication costs by \textbf{57\%} and improving patient satisfaction scores by \textbf{35\%}}
+        \resumeItem{Implemented an SMS notification system for prescription status updates, reducing prescription abandonment by \textbf{63\%} and raising the prescription fill-through rate from \textbf{78\% to 92\%}}
       \resumeItemListEnd
 
     \resumeSubheading
       {Senior Software Engineer}{January 2016 -- August 2017}
-      {Adnare Pvt Ltd}{Toronto, ON}
+      {Adnare Pvt Ltd}{}
       \resumeItemListStart
-        \resumeItem{Delivered full-stack billing platform using \textbf{ASP.NET MVC} and \textbf{Kendo UI}, serving \textbf{200+ healthcare providers} across North America with \textbf{99.9\%} reliability}
-        \resumeItem{Designed and deployed \textbf{mass patient payment system} using \textbf{advanced LINQ queries} and \textbf{database optimization}, increasing biller productivity by \textbf{30\%} and driving \textbf{\$5M+ annual company revenue}}
-        \resumeItem{Modernized paper-based billing workflows into digital-first processes, \textbf{reducing paper consumption by 70\%}} and manual processing time from \textbf{4 hours to 45 minutes} per batch}
-        \resumeItem{Mentored 2 junior developers in ASP.NET best practices and code quality standards, leading to \textbf{50\% reduction} in production defects}
+        \resumeItem{Delivered a full-stack billing platform using \textbf{ASP.NET MVC} and \textbf{Kendo UI}, serving \textbf{200+ healthcare providers} across North America with \textbf{99.9\%} reliability}
+        \resumeItem{Designed and deployed a mass patient payment system using advanced LINQ queries and database optimization, increasing biller productivity by \textbf{30\%} and driving \textbf{\$5M+} in annual company revenue}
+        \resumeItem{Modernized paper-based billing workflows into digital-first processes, reducing paper consumption by 70\% and cutting manual processing time from \textbf{4 hours to 45 minutes} per batch}
+        \resumeItem{Mentored 2 junior developers in ASP.NET best practices and code quality standards, leading to a \textbf{50\% reduction} in production defects}
       \resumeItemListEnd
 
     \resumeSubheading
       {Software Engineer}{August 2014 -- January 2016}
-      {Rolustech Dynamic IT Solutions}{Toronto, ON}
+      {Rolustech Dynamic IT Solutions}{}
       \resumeItemListStart
-        \resumeItem{Built full-stack web applications using \textbf{PHP} (\textbf{90\%}) and \textbf{MySQL}, delivering features to \textbf{50,000+} active users with \textbf{99.5\%} uptime}
-        \resumeItem{Architected and shipped \textbf{offline-first mobile web application} using \textbf{BackboneJS}, enabling field teams to work without connectivity and sync data upon reconnection, \textbf{eliminating downtime} for remote users}
+        \resumeItem{Built full-stack web applications using \textbf{PHP} and \textbf{MySQL}, delivering features to \textbf{50,000+} active users with \textbf{99.5\%} uptime}
+        \resumeItem{Architected and shipped an offline-first mobile web application using \textbf{BackboneJS}, enabling field teams to work without connectivity and sync data on reconnection, which eliminated downtime for remote users}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -225,27 +181,25 @@
 \section{Certifications}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Microsoft Certified: Azure Developer Associate}{June 2026}
+      {Microsoft Certified: Azure DevOps Engineer Expert (AZ-400)}{In progress}
       {Microsoft}{}
     \resumeSubheading
-      {Microsoft Certified: Azure Fundamentals}{February 2026}
+      {Microsoft Certified: Azure Developer Associate (AZ-204)}{June 2026}
+      {Microsoft}{}
+    \resumeSubheading
+      {Microsoft Certified: Azure Fundamentals (AZ-900)}{February 2026}
       {Microsoft}{}
     \resumeSubheading
       {The Complete Agentic AI Engineering 2025}{October 2025}
       {Udemy}{}
-    \resumeSubheading
-      {Security Awareness Training}{April 2024}
-      {Udemy}{}
   \resumeSubHeadingListEnd
 
-
-
- %-----------EDUCATION-----------
- \section{Education}
+%-----------EDUCATION-----------
+\section{Education}
  \resumeSubHeadingListStart
    \resumeSubheading
-     {The Punjab University}{}
-     {Bachelor of Software Engineering}{October 2010 -- July 2014}
+     {University of the Punjab}{2014}
+     {Bachelor of Software Engineering}{}
  \resumeSubHeadingListEnd
-%-------------------------------------------
+
 \end{document}
